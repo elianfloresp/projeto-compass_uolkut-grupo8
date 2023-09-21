@@ -2,7 +2,6 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 
 const SignInForm:FC = () => {
-  const isMobile = true;
   return (
     <form>
       <h1>Acesse o UOLkut</h1>
