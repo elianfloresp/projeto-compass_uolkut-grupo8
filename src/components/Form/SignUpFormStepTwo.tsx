@@ -1,49 +1,95 @@
 import { FC } from "react";
+import {
+  FormContainer,
+  Input,
+  Title,
+  Label,
+  Select,
+  Button,
+} from "../pages/UI/StyledForm";
 
-const SignUpFormStepTwo:FC = () => {
+const SignUpFormStepTwo: FC = () => {
   return (
-    <form>
-      <h1>Cadastre-se no UOLkut</h1>
-      <input id='sign-up-description'     placeholder="Quem sou eu?" type='text'/>
-      <input id='sign-up-interests'       placeholder="Interesses" type='text'/>
-      { /* TA REPETIDO ? 
-        <select name='sign-up-relationship' id='sign-up-relationship'>
-          <option value='' style={{color: '#868686'}}>Relacionamento</option>
-          <option value='solteiro'>Solteiro</option>
-          <option value='casado'>Casado</option>
-          <option value='divorciado'>Divorciado</option>
-          <option value='namorando'>Namorando</option>
-          <option value='preocupado'>Preocupado</option>
-        </select> */ }
-      <input id='sign-up-children'        placeholder="Número de Filhos" type='number'/>
+    <FormContainer>
+      <Title>Cadastre-se no UOLkut</Title>
+      <Input
+        id="sign-up-description"
+        className="special-input"
+        placeholder="Quem sou eu?"
+        type="text"
+      />
+      <Input
+        id="sign-up-interests"
+        className="special-input"
+        placeholder="Interesses"
+        type="text"
+      />
 
-      <select name='sign-up-smoke' id='sign-up-smoke'>
-        <option value='' style={{color: '#868686'}}>Hábitos de Fumo</option>
-        <option value='never'>Nunca</option>
-        <option value='socially'>Socialmente</option>
-        <option value='sometimes'>Às vezes</option>
-        <option value='frequently'>Com frequência</option>
-        <option value='trying-to-quit'>Tentando parar</option>
-      </select>
+      <Select id="sign-up-relationship" name="sign-up-relationship">
+        <option selected disabled value="" style={{ color: "#868686" }}>
+          Relacionamento
+        </option>
+        <option value="solteiro">Solteiro</option>
+        <option value="casado">Casado</option>
+        <option value="divorciado">Divorciado</option>
+        <option value="namorando">Namorando</option>
+        <option value="preocupado">Preocupado</option>
+      </Select>
 
-      <select name='sign-up-drink' id='sign-up-drink'>
-        <option value='' style={{color: '#868686'}}>Hábitos de Bebida</option>
-        <option value='never'>Nunca</option>
-        <option value='socially'>Socialmente</option>
-        <option value='sometimes'>Às vezes</option>
-        <option value='frequently'>Com frequência</option>
-        <option value='trying-to-quit'>Tentando parar</option>
-      </select>
+      <Input
+        id="sign-up-children"
+        className="special-input"
+        placeholder="Número de Filhos"
+        type="number"
+      />
 
-      <label htmlFor="sign-up-profile-picture">Escolha uma foto de perfil</label>
-      <input id='sign-up-profile-picture' type='file' accept="image/png, image/jpeg"/>
-      <input id='sign-up-favorite-songs'  placeholder="Músicas Favoritas" type='text'/>
-      <input id='sign-up-favorite-movies' placeholder="Filmes Favoritos" type='text'/>
+      <Select name="sign-up-smoke" id="sign-up-smoke">
+        <option selected disabled value="" style={{ color: "#868686" }}>
+          Hábitos de Fumo
+        </option>
+        <option value="never">Nunca</option>
+        <option value="socially">Socialmente</option>
+        <option value="sometimes">Às vezes</option>
+        <option value="frequently">Com frequência</option>
+        <option value="trying-to-quit">Tentando parar</option>
+      </Select>
 
-      <button type="submit">Salvar informações</button>
-    </form>
+      <Select name="sign-up-drink" id="sign-up-drink">
+        <option selected disabled value="" style={{ color: "#868686" }}>
+          Hábitos de Bebida
+        </option>
+        <option value="never">Nunca</option>
+        <option value="socially">Socialmente</option>
+        <option value="sometimes">Às vezes</option>
+        <option value="frequently">Com frequência</option>
+        <option value="trying-to-quit">Tentando parar</option>
+      </Select>
+
+      <Label htmlFor="sign-up-profile-picture">
+        Escolha uma foto de perfil
+      </Label>
+      <Input
+        id="sign-up-profile-picture"
+        className="special-input"
+        type="file"
+        accept="image/png, image/jpeg"
+      />
+      <Input
+        id="sign-up-favorite-songs"
+        className="special-input"
+        placeholder="Músicas Favoritas"
+        type="text"
+      />
+      <Input
+        id="sign-up-favorite-movies"
+        className="special-input"
+        placeholder="Filmes Favoritos"
+        type="text"
+      />
+
+      <Button type="submit">Salvar informações</Button>
+    </FormContainer>
   );
-
-}
+};
 
 export default SignUpFormStepTwo;
