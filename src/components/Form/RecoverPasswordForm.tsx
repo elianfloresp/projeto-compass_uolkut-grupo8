@@ -1,20 +1,17 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { Button, FormContainer, Input, Title } from "../pages/UI/StyledForm";
 
 const RecoverPasswordForm:FC = () => {
-  const isMobile = true;
   return (
-    <form>
-      <h1>Recupere sua senha</h1>
-      <input id='registered-email'        placeholder="E-mail cadastrado" type='email'/>
-      <button type="submit">Enviar código</button>
+    <FormContainer>
+      <Title>Recupere sua senha</Title>
+      <Input id='registered-email' className="special-input" placeholder="E-mail cadastrado" type='email'/>
+      <Button type="submit">Enviar código</Button>
 
       <p>Lembrou sua senha?</p>
-      <Link to="/SignInForm">
-        <button type="button">Entrar com as credenciais</button>
-      </Link>
+      <Button type="button">Entrar com as credenciais</Button>
 
-    </form>
+    </FormContainer>
   );
 }
 
