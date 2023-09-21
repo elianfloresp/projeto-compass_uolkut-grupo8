@@ -1,27 +1,26 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { FormContainer, Button, Title, Input, Label } from "../pages/UI/StyledForm";
 
 const SignInForm:FC = () => {
   return (
-    <form>
-      <h1>Acesse o UOLkut</h1>
-      <input id='sign-in-email'        placeholder="E-mail" type='email'/>
-      <input id='sign-in-password'     placeholder="Senha" type='password'/>
+    <FormContainer>
+      <Title>Acesse o UOLkut</Title>
+      <Input id='sign-in-email' className="special-input" placeholder="E-mail" type='email'/>
+      <Input id='sign-in-password' className="special-input" placeholder="Senha" type='password'/>
       
       <div>
-        <input type="checkbox" id="remember-my-password" />
-        <label htmlFor="remember-my-password">Lembrar minha senha</label>
+        <Input type="checkbox" className="special-input" id="remember-my-password" />
+        <Label htmlFor="remember-my-password">Lembrar minha senha</Label>
       </div>
 
-      <button type="submit">Entrar na conta</button>
-      <Link to="/SignUpFormStepOne">
-        <button type="button">Criar conta</button>
-      </Link>
+      <Button type="submit">Entrar na conta</Button>
+      <Button type="button">Criar conta</Button> {/* TODO: Consertar para deixar cinza */}
 
-      <Link to="/forgot-password" style={{ textDecoration: 'underline' }}>
+      <a style={{ textDecoration: 'underline', textAlign: 'center' }}> {/* TODO: adicionar href */}
         Esqueci minha senha
-      </Link>
-    </form>
+      </a>
+      
+    </FormContainer>
   );
 }
 
