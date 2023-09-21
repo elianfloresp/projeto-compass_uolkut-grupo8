@@ -1,7 +1,13 @@
 import React from 'react';
+import StyledForm from './components/pages/UI/StyledForm'; 
 
-function App() {
-  return (<React.Fragment></React.Fragment>);
-}
+const App = () => {
+  return (
+    <div className='App'>
+      
+    </div>
+  );
+};
 
 export default App;
+
