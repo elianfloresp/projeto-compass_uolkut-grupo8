@@ -1,24 +1,21 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { Button, FormContainer, Input, Title } from "../pages/UI/StyledForm";
 
-const ChanngePasswordForm:FC = () => {
-  const isMobile = true;
+const ChangePasswordForm:FC = () => {
   return (
-    <form>
-      <h1>Nova senha</h1>
-      <input id='authentication-code'        placeholder="Informe o código" type='number'/>
-      <input id='new-password'        placeholder="Nova senha" type='password'/>
-      <input id='confirm-password'        placeholder="Confirmar a senha" type='password'/>
+    <FormContainer>
+      <Title>Nova senha</Title>
+      <Input id='authentication-code'className="special-input" placeholder="Informe o código" type='number'/>
+      <Input id='new-password'       className="special-input" placeholder="Nova senha" type='password'/>
+      <Input id='confirm-password'   className="special-input" placeholder="Confirmar a senha" type='password'/>
 
-      <button type="submit">Salvar</button>
+      <Button type="submit">Salvar</Button>
 
       <p>Lembrou sua senha?</p>
-      <Link to="/SignInForm">
-        <button type="button">Entrar com as credenciais</button>
-      </Link>
+      <Button type="button">Entrar com as credenciais</Button>
 
-    </form>
+    </FormContainer>
   );
 }
 
-export default ChanngePasswordForm;
+export default ChangePasswordForm;
