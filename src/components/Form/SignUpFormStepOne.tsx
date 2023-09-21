@@ -1,16 +1,16 @@
 import { FC } from "react";
+import useMediaQuery from "../../hooks/use-media-query";
 import {
   FormContainer,
   Input,
   Title,
   DateInputContainer,
   DateLabel,
-  Select,
   Button,
 } from "../pages/UI/StyledForm";
 
 const SignUpFormStepOne: FC = () => {
-  const isMobile = true;
+  const isMobile = useMediaQuery('(min-width: 600px)');
   return (
     <FormContainer>
       <Title>Cadastre-se no UOLkut</Title>
