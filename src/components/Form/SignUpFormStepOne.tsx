@@ -68,17 +68,6 @@ const SignUpFormStepOne: FC = () => {
         </div>
       </DateInputContainer>
 
-      <Select id="sign-up-relationship" name="sign-up-relationship">
-        <option value="" style={{ color: "#868686" }}>
-          Relacionamento
-        </option>
-        <option value="solteiro">Solteiro</option>
-        <option value="casado">Casado</option>
-        <option value="divorciado">Divorciado</option>
-        <option value="namorando">Namorando</option>
-        <option value="preocupado">Preocupado</option>
-      </Select>
-
       <Button type="submit">Criar conta</Button>
     </FormContainer>
   );
