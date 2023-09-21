@@ -1,39 +1,87 @@
 import { FC } from "react";
+import {
+  FormContainer,
+  Input,
+  Title,
+  DateInputContainer,
+  DateLabel,
+  Select,
+  Button,
+} from "../pages/UI/StyledForm";
 
-const SignUpFormStepOne:FC = () => {
+const SignUpFormStepOne: FC = () => {
   const isMobile = true;
   return (
-    <form>
-      <h1>Cadastre-se no UOLkut</h1>
-      <input id='sign-up-email'        placeholder="E-mail" type='email'/>
-      <input id='sign-up-password'     placeholder="Senha" type='password'/>
-      <input id='sign-up-name'         placeholder="Nome" type='text'/>
+    <FormContainer>
+      <Title>Cadastre-se no UOLkut</Title>
+      <Input
+        id="sign-up-email"
+        className="special-input"
+        placeholder="E-mail"
+        type="email"
+      />
+      <Input
+        id="sign-up-password"
+        className="special-input"
+        placeholder="Senha"
+        type="password"
+      />
+      <Input
+        id="sign-up-name"
+        className="special-input"
+        placeholder="Nome"
+        type="text"
+      />
 
-      <div>
-        { isMobile && <input id='sign-up-birthday'     placeholder="DD/MM/AAAA" type='date'/>}
-        {!isMobile && <input id='sign-up-birthday'     placeholder="Nascimento" type='date'/>}
-        {!isMobile && <p>DDD/MM/AAAA</p>}
-        <input id='sign-up-occupation'   placeholder="Profissão" type='text'/>
-      </div>
+      <DateInputContainer>
+        {!isMobile && <DateLabel>Nascimento</DateLabel>}
+        <Input
+          id="sign-up-birthday"
+          className="small-input"
+          placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
+          type="date"
+        />
 
-      <div>
-        <input id='sign-up-country'      placeholder="País" type='text'/>
-        <input id='sign-up-city'         placeholder="Cidade" type='text'/>
-      </div>
+        {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+        <Input
+          id="sign-up-occupation"
+          className="small-input"
+          placeholder="Profissão"
+          type="text"
+        />
 
-      <select name='sign-up-relationship' id='sign-up-relationship'>
-        <option value='' style={{color: '#868686'}}>Relacionamento</option>
-        <option value='solteiro'>Solteiro</option>
-        <option value='casado'>Casado</option>
-        <option value='divorciado'>Divorciado</option>
-        <option value='namorando'>Namorando</option>
-        <option value='preocupado'>Preocupado</option>
-      </select>
+        <div>
+          <Input
+            id="sign-up-country"
+            className="small-input"
+            placeholder="País"
+            type="text"
+          />
+        </div>
+        <div>
+          <Input
+            id="sign-up-city"
+            className="small-input"
+            placeholder="Cidade"
+            type="text"
+          />
+        </div>
+      </DateInputContainer>
 
-      <button type="submit">Criar conta</button>
-    </form>
+      <Select id="sign-up-relationship" name="sign-up-relationship">
+        <option value="" style={{ color: "#868686" }}>
+          Relacionamento
+        </option>
+        <option value="solteiro">Solteiro</option>
+        <option value="casado">Casado</option>
+        <option value="divorciado">Divorciado</option>
+        <option value="namorando">Namorando</option>
+        <option value="preocupado">Preocupado</option>
+      </Select>
+
+      <Button type="submit">Criar conta</Button>
+    </FormContainer>
   );
-
-}
+};
 
 export default SignUpFormStepOne;
