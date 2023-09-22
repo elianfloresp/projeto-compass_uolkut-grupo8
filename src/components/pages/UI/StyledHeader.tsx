@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-const StyledHeader = styled.header`
-  /* width: 22.5rem; */
-  height: 3.75rem;
-  background-color: #FFFFFF; 
+const Header = styled.header`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 88%;
+  height: 3.75rem;
+  background-color: #FFFFFF; 
+  margin: 0 auto; 
 `;
+
 
 const Title = styled.h1`
   color: #ED6D25;
@@ -19,12 +21,26 @@ const Title = styled.h1`
 `;
 
 
-function Header() {
+const div = styled.img`
+  color: #ED6D25;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+`;
+
+function header() {
   return (
-    <StyledHeader>
+    <Header>
       <Title>UOLkut</Title>
-    </StyledHeader>
+      <div>
+      <img src="bg.png" alt="logo" />
+      <img src="arrow.png" alt="logo" /> 
+      
+      </div>
+    </Header>
   );
 }
 
-export default Header;
+export default header;
