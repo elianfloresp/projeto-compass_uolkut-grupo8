@@ -30,7 +30,6 @@ const div = styled.img`
   line-height: normal;
 `;
 
-
 function header() {
   return (
     <Header>
