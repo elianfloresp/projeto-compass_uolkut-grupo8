@@ -36,7 +36,8 @@ function header() {
       <Title>UOLkut</Title>
       <div>
       <img src="bg.png" alt="logo" />
-      <img src="arrow.png" alt="logo" />  
+      <img src="arrow.png" alt="logo" /> 
+      
       </div>
     </Header>
   );
