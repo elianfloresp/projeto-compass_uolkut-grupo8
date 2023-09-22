@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Header = styled.header`
-  width: 22.5rem;
+const StyledHeader = styled.header`
+  /* width: 22.5rem; */
   height: 3.75rem;
   background-color: #FFFFFF; 
   display: flex;
@@ -19,12 +19,12 @@ const Title = styled.h1`
 `;
 
 
-function header() {
+function Header() {
   return (
-    <Header>
+    <StyledHeader>
       <Title>UOLkut</Title>
-    </Header>
+    </StyledHeader>
   );
 }
 
-export default header;
+export default Header;
