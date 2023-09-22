@@ -4,12 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import SignUpFormStepOne from './components/Form/SignUpFormStepOne';
-import SignUpFormStepTwo from './components/Form/SignUpFormStepTwo';
-import SignInForm from './components/Form/SignInForm';
 import RecoverPasswordForm from './components/Form/RecoverPasswordForm';
 import ChangePasswordForm from './components/Form/ChangePasswordForm';
 import SignInPage from './pages/SignIn';
+import SignUpStepOnePage from './pages/SignUpStepOne';
+import SignUpStepTwoPage from './pages/SignUpStepTwo';
 
 
 const router = createBrowserRouter([
@@ -18,8 +17,8 @@ const router = createBrowserRouter([
     element:<App />,
     children: [
       {index: true, element:<SignInPage/>},
-      {path: 'sign-up/step-one', element:<SignUpFormStepOne/>},
-      {path: 'sign-up/step-two', element:<SignUpFormStepTwo/>},
+      {path: 'sign-up/step-one', element:<SignUpStepOnePage/>},
+      {path: 'sign-up/step-two', element:<SignUpStepTwoPage/>},
       {path: 'password/recover', element:<RecoverPasswordForm/>},
       {path: 'password/change', element:<ChangePasswordForm/>},
     ]

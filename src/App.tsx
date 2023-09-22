@@ -11,7 +11,6 @@ const MainContent = styled.main`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 `;
 
 const App = () => {
