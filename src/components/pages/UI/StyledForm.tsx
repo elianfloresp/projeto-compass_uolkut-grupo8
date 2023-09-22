@@ -14,6 +14,8 @@ export const FormContainer = styled.form`
   box-shadow: 0px 4px 4px #00000040;
   width: 24rem;
   height: 37.375rem; 
+
+  overflow: auto;
 `;
 
 // Tem alguns titles que a fonte é Inter
@@ -33,6 +35,24 @@ export const Title = styled.h1`
   }
 `;
 
+export const TextArea = styled.textarea`
+  width: 21rem;
+  height: 6rem;
+  box-sizing: border-box;
+
+  resize: none;
+
+  background: #eff3f8;
+
+  border-radius: 8px;
+  margin-bottom: 1.19rem;
+
+  font-family: Roboto Flex;
+  font-size: 1rem;
+  font-weight: 400;
+
+  padding: 1rem;
+`;
 export const Input = styled.input`
   &[type='text'],
   &[type='email'],
@@ -63,7 +83,7 @@ export const Input = styled.input`
   font-size: 1rem;
   font-weight: 400;
 
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
 
   &.small-input {
     width: 7.8125rem;
@@ -99,7 +119,7 @@ export const Button = styled.button`
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 3.1875rem;
 
 
   &.secondary {
@@ -122,11 +142,22 @@ export const Href = styled.a`
 `;
 
 export const Select = styled.select`
-  width: 8.5000rem;
-  height: 2.3125rem;
-  padding-left: 0.7rem;
+  width: 11.5rem;
+  height: 2.1875rem;
+
+  padding: 0.56rem;
+  padding-top: 0.44rem;
 
   background: #eff3f8;
+
+  font-family: Roboto Flex;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+
+  color: #868686;
+
   border-radius: 8px;
   margin-bottom: 1.19rem;
   margin-left: 10.31rem;
