@@ -3,13 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SignUpFormStepOne from './components/Form/SignUpFormStepOne';
+import SignUpFormStepTwo from './components/Form/SignUpFormStepTwo';
+import SignInForm from './components/Form/SignInForm';
+import RecoverPasswordForm from './components/Form/RecoverPasswordForm';
+import ChangePasswordForm from './components/Form/ChangePasswordForm';
+
+
+const router = createBrowserRouter([
+  {
+    path: '/', 
+    element:<App />,
+    children: [
+      {index: true, element:<SignInForm/>},
+      {path: 'sign-up/step-one', element:<SignUpFormStepOne/>},
+      {path: 'sign-up/step-two', element:<SignUpFormStepTwo/>},
+      {path: 'password/recover', element:<RecoverPasswordForm/>},
+      {path: 'password/change', element:<ChangePasswordForm/>},
+    ]
+  },
+])
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
