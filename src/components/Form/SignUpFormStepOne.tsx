@@ -16,19 +16,16 @@ const SignUpFormStepOne: FC = () => {
       <Title>Cadastre-se no UOLkut</Title>
       <Input
         id="sign-up-email"
-        className="special-input"
         placeholder="E-mail"
         type="email"
       />
       <Input
         id="sign-up-password"
-        className="special-input"
         placeholder="Senha"
         type="password"
       />
       <Input
         id="sign-up-name"
-        className="special-input"
         placeholder="Nome"
         type="text"
       />
