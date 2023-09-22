@@ -1,4 +1,6 @@
+import { FC, ReactNode } from "react";
 import styled from "styled-components";
+import UOLKutLogo from '../../../assets/ps_orkut.svg';
 
 export const FormContainer = styled.form`
   display: flex;
@@ -18,9 +20,8 @@ export const FormContainer = styled.form`
   overflow: auto;
 `;
 
-// Tem alguns titles que a fonte é Inter
-export const Title = styled.h1`
-  padding-top: 3.06rem;
+export const StyledTitle = styled.h1`
+  padding-top: 1rem;
   padding-bottom: 2.19rem;
 
   color: #ed6d25;
@@ -34,6 +35,20 @@ export const Title = styled.h1`
     font-family: "Inter";
   }
 `;
+
+export const Title:FC<{children: ReactNode}> = (props: {children: ReactNode}) => {
+  return (
+    <>
+      <img src={UOLKutLogo} alt="UOLKut Logo" />
+      <StyledTitle>
+        {props.children}
+      </StyledTitle>
+    </>
+  );
+
+}
+
+
 
 export const TextArea = styled.textarea`
   width: 21rem;
