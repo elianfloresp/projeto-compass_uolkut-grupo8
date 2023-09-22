@@ -5,6 +5,10 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
 
+  box-sizing: border-box;
+
+  padding: 3rem 0 2rem 0;
+
   background-color: #fcfdff;
   border-radius: 16px;
   box-shadow: 0px 4px 4px #00000040;
@@ -81,11 +85,12 @@ export const Button = styled.button`
 `;
 
 export const Href = styled.a`
-  display: flex;
-  justify-content: center;
   color: #ed6d25;
   font-family: "Roboto Flex";
   font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
 `;
 
 export const Select = styled.select`
