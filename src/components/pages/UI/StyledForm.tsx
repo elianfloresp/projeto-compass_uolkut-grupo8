@@ -4,9 +4,6 @@ export const FormContainer = styled.form`
   background-color: #fcfdff;
   border-radius: 16px;
   box-shadow: 0px 4px 4px #00000040;
-  left: 0;
-  position: fixed;
-  top: 0;
   width: 20rem;
   height: 36.375rem;
 `;
