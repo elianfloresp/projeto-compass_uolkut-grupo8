@@ -1,10 +1,10 @@
 import React from 'react';
-import StyledForm from './components/pages/UI/StyledForm'; 
+import header from './components/pages/UI/StyledHeader';
 
 const App = () => {
   return (
     <div className='App'>
-      
+      <header/>
     </div>
   );
 };
