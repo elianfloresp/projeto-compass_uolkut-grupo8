@@ -88,6 +88,7 @@ export const Input = styled.input`
   &[type='email'],
   &[type='number'],
   &[type='date'],
+  &[type='file'],
   &[type='password'] {
     width: 17.5625rem;
     height: 2.3125rem; 
@@ -120,6 +121,10 @@ export const Input = styled.input`
     width: 7.8125rem;
   }
 
+  &[type='file'] {
+    display: none
+  }
+
 
   @media (min-width : 768px) {
     font-size: 1rem;
@@ -128,6 +133,7 @@ export const Input = styled.input`
     &[type='email'],
     &[type='number'],
     &[type='date'],
+    &[type='file'],
     &[type='password'] {
       width: 21rem;
       height: 3.1875rem;
@@ -146,6 +152,27 @@ export const Label = styled.label`
 
 export const DateLabel = styled.label`
   color: #868686;
+`;
+
+export const FileLabel = styled.label`
+  width: 17.5625rem;
+  height: 2.3125rem; 
+  box-sizing: border-box;
+  background: #eff3f8;
+
+  border-radius: 8px;
+  margin-bottom: 1.19rem;
+  font-family: "Roboto Flex";
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #868686;
+  padding: 1rem;
+
+  @media (min-width : 768px) {
+    font-size: 1rem;
+    width: 21rem;
+    height: 3.1875rem;
+  }
 `;
 
 export const DateInputContainer = styled.div`

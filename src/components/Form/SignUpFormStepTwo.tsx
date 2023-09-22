@@ -3,7 +3,7 @@ import {
   FormContainer,
   Input,
   Title,
-  Label,
+  FileLabel,
   Select,
   Button,
   TextArea,
@@ -65,9 +65,9 @@ const SignUpFormStepTwo: FC = () => {
         <option value="trying-to-quit">Tentando parar</option>
       </Select>
 
-      <Label htmlFor="sign-up-profile-picture">
+      <FileLabel htmlFor="sign-up-profile-picture">
         Escolha uma foto de perfil
-      </Label>
+      </FileLabel>
       <Input
         id="sign-up-profile-picture"
         className="special-input"
