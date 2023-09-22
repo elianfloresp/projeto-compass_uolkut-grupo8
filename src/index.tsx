@@ -9,6 +9,7 @@ import SignUpFormStepTwo from './components/Form/SignUpFormStepTwo';
 import SignInForm from './components/Form/SignInForm';
 import RecoverPasswordForm from './components/Form/RecoverPasswordForm';
 import ChangePasswordForm from './components/Form/ChangePasswordForm';
+import SignInPage from './pages/SignIn';
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     path: '/', 
     element:<App />,
     children: [
-      {index: true, element:<SignInForm/>},
+      {index: true, element:<SignInPage/>},
       {path: 'sign-up/step-one', element:<SignUpFormStepOne/>},
       {path: 'sign-up/step-two', element:<SignUpFormStepTwo/>},
       {path: 'password/recover', element:<RecoverPasswordForm/>},
