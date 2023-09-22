@@ -34,17 +34,33 @@ export const Title = styled.h1`
 `;
 
 export const Input = styled.input`
-  width: 21rem;
-  height: 3.1875rem;
+  &[type='text'],
+  &[type='email'],
+  &[type='number'],
+  &[type='password'] {
+    width: 21rem;
+    height: 3.1875rem;
+    box-sizing: border-box;
 
-  box-sizing: border-box;
+    background: #eff3f8;
 
-  background: #eff3f8;
+    border-radius: 8px;
+    margin-bottom: 1.19rem;
+  }
 
-  border-radius: 8px;
-  margin-bottom: 1.19rem;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  font-family: Roboto Flex;
   font-size: 1rem;
+  font-weight: 400;
 
   padding: 0 1rem 0 1rem;
 
@@ -54,7 +70,9 @@ export const Input = styled.input`
   }
 `;
 
-export const Label = styled.label``;
+export const Label = styled.label`
+  color: #868686;
+`;
 
 export const DateLabel = styled.p``;
 
@@ -91,6 +109,10 @@ export const Href = styled.a`
   font-style: normal;
   font-weight: 400;
   line-height: normal; 
+
+  &.underline{
+    text-decoration: underline;
+  }
 `;
 
 export const Select = styled.select`
