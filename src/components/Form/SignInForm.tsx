@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FormContainer, Button, Title, Input, Label, Href } from "../pages/UI/StyledForm";
+import { FormContainer, Button, Title, Input, Label } from "../pages/UI/StyledForm";
 
 const SignInForm:FC = () => {
   return (
@@ -14,11 +14,11 @@ const SignInForm:FC = () => {
       </div>
 
       <Button type="submit">Entrar na conta</Button>
-      <Button type="button" className="secondary">Criar conta</Button> {/* TODO: Consertar para deixar cinza */}
+      <Button type="button">Criar conta</Button> {/* TODO: Consertar para deixar cinza */}
 
-      <Href className="underline">
+      <a style={{ textDecoration: 'underline', textAlign: 'center' }}> {/* TODO: adicionar href */}
         Esqueci minha senha
-      </Href>
+      </a>
       
     </FormContainer>
   );

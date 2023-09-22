@@ -6,17 +6,17 @@ import {
   Label,
   Select,
   Button,
-  TextArea,
 } from "../pages/UI/StyledForm";
 
 const SignUpFormStepTwo: FC = () => {
   return (
     <FormContainer>
       <Title>Cadastre-se no UOLkut</Title>
-      <TextArea
+      <Input
         id="sign-up-description"
         className="special-input"
         placeholder="Quem sou eu?"
+        type="text"
       />
       <Input
         id="sign-up-interests"
