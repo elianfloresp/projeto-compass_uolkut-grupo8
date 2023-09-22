@@ -37,6 +37,7 @@ export const Input = styled.input`
   &[type='text'],
   &[type='email'],
   &[type='number'],
+  &[type='date'],
   &[type='password'] {
     width: 21rem;
     height: 3.1875rem;
@@ -66,7 +67,6 @@ export const Input = styled.input`
 
   &.small-input {
     width: 7.8125rem;
-    height: 2.3125rem;
   }
 `;
 
@@ -74,12 +74,18 @@ export const Label = styled.label`
   color: #868686;
 `;
 
-export const DateLabel = styled.p``;
+export const DateLabel = styled.label`
+  color: #868686;
+  
+`;
 
 export const DateInputContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const Button = styled.button`
