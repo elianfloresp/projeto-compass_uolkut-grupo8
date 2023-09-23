@@ -24,29 +24,46 @@ const CommunityListContainer = styled.div`
 
   padding-top: 24px;
   padding-bottom: 25px;
+
+  transition: all 0.1s linear;
+  @media (min-width : 768px) {
+    width: 280px;
+    height: 411px; 
+  }
 `;
 
 const ListName = styled.p`
   align-text: start;
-  padding-left: 27.43px;
 
   color: #4B4B4B;
   font-family: "Roboto Flex";
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
+
+  padding-left: 27.43px;
+
+  transition: all 0.1s linear;
+  @media (min-width : 768px) {
+    padding-left: 24px;
+  }
 `;
 
 const ShowAllButton = styled.button`
   text-align: end;
-  padding-right: 27.43px;
 
   color: #ED6D25;
-  
   font-family: "Roboto Flex";
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5rem; 
+
+  padding-right: 27.43px;
+
+  transition: all 0.1s linear;
+  @media (min-width : 768px) {
+    padding-right: 21px;
+  }
 `;
 
 const ItemListContainer = styled.div`
@@ -55,6 +72,11 @@ const ItemListContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 36.54px;
   grid-row-gap: 33px;
+   
+  transition: all 0.1s linear;
+  @media (min-width : 768px) {
+    grid-column-gap: 30px;
+  }
 `;
 
 const CommunityListCard: FC<CommunityListProps> = (props) => {
