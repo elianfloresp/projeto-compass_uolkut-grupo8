@@ -1,13 +1,22 @@
-import React from 'react';
-import StyledForm from './components/pages/UI/StyledForm'; 
+import React, { useState, ChangeEvent } from 'react';
+import styled from 'styled-components';
+import CustomCheckbox from './components/pages/UI/StyledCB';
 
-const App = () => {
+function App() {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+  };
+
   return (
-    <div className='App'>
-      
+    <div>
+      <CustomCheckbox checked={isChecked} onChange={handleChange} />
+      <p>Checkbox is {isChecked ? 'checked' : 'unchecked'}</p>
     </div>
   );
-};
+}
 
 export default App;
+
 
