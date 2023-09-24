@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const StyledContainer = styled.div`
     position: relative;
-    width: 800px;
+    width: 42vw;
+    max-width: 800px;
     height: 598px;
     border-radius: 16px;
 `;
@@ -26,7 +27,9 @@ const StyledLogUpWrapper = styled.div`
 
 const StyledLogUpImage = styled.img`
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
     
 `;  
 
