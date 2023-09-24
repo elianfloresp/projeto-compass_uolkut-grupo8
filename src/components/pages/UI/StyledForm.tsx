@@ -99,7 +99,11 @@ export const Input = styled.input`
     background: #eff3f8;
 
     border-radius: 8px;
+
     margin-top: 1.19rem;
+    &:first-of-type {
+      margin-top: 0rem;
+    }
   }
 
   &::-webkit-outer-spin-button,
@@ -164,11 +168,35 @@ export const DateLabel = styled.label`
 
 export const DateInputContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const GridInputContainer = styled.div`
+  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 1.31rem 0 1.31rem;
+  padding: 0 21px 0 21px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top:1.19rem;
+
+  @media (min-width : 768px) {
+    margin-top: 0rem;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    & input.small-input:nth-child(odd) {
+      width: 7.8125rem;
+      height: 3.1875rem;
+      margin-top:1.19rem;
+    }
+    & input.small-input:nth-child(even){
+      width: 11.5rem;
+      height: 3.1875rem;
+      margin-top:1.19rem;
+    }
+  }
 `;
 
 export const Button = styled.button`

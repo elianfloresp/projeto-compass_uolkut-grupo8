@@ -5,6 +5,7 @@ import {
   Input,
   Title,
   DateInputContainer,
+  GridInputContainer,
   DateLabel,
   Button,
 } from "../pages/UI/StyledForm";
@@ -30,14 +31,16 @@ const SignUpFormStepOne: FC = () => {
         type="text"
       />
 
-      <DateInputContainer>
-        <Input
-          id="sign-up-birthday"
-          className="small-input"
-          placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
-          type="text"
-        />
-        {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+      <GridInputContainer>
+        <DateInputContainer>
+          <Input
+            id="sign-up-birthday"
+            className="small-input"
+            placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
+            type="text"
+          />
+          {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+        </DateInputContainer>
 
         <Input
           id="sign-up-occupation"
@@ -46,23 +49,19 @@ const SignUpFormStepOne: FC = () => {
           type="text"
         />
 
-        <div>
-          <Input
-            id="sign-up-country"
-            className="small-input"
-            placeholder="País"
-            type="text"
-          />
-        </div>
-        <div>
-          <Input
-            id="sign-up-city"
-            className="small-input"
-            placeholder="Cidade"
-            type="text"
-          />
-        </div>
-      </DateInputContainer>
+        <Input
+          id="sign-up-country"
+          className="small-input"
+          placeholder="País"
+          type="text"
+        />
+        <Input
+          id="sign-up-city"
+          className="small-input"
+          placeholder="Cidade"
+          type="text"
+        />
+      </GridInputContainer>
 
       <Button type="submit">Criar conta</Button>
     </FormContainer>
