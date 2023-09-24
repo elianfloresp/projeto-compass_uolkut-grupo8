@@ -4,14 +4,13 @@ const StyledContainer = styled.div`
     position: relative;
     width: 800px;
     height: 598px;
-    border-radius: 20px;
+    border-radius: 16px;
 `;
 
-const StyledLogUpImage = styled.img`
+const StyledLogUpWrapper = styled.div`
     position: relative;
     width: 100%;
-    height: auto;
-
+    height: 100%;
     &::after {
         content: "";
         position: absolute;
@@ -19,9 +18,16 @@ const StyledLogUpImage = styled.img`
         left: 0;
         width: 100%;
         height: 100%;
+        border-radius: 16px;
         background: linear-gradient(195deg, rgba(20, 20, 20, 0.00) 7.46%, #141414 69.4%);
         opacity: 0.72;
     }
+`;
+
+const StyledLogUpImage = styled.img`
+    width: 100%;
+    height: auto;
+    
 `;  
 
 const StyledParagraph = styled.p`
@@ -41,7 +47,9 @@ const StyledParagraph = styled.p`
 const LogUpImage = () => {
   return (
     <StyledContainer>
-        <StyledLogUpImage src="/log-up-image.svg" alt="Descrição da imagem" />
+        <StyledLogUpWrapper>
+            <StyledLogUpImage src="/log-up-image.svg" alt="Descrição da imagem" />
+        </StyledLogUpWrapper>
         
         <StyledParagraph>
             Conecta-se aos seus amigos e familiares usando recados e mensagens instantâneas
