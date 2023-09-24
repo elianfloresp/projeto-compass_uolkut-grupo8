@@ -164,6 +164,8 @@ export const DateLabel = styled.label`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.0625rem;
+  height: 0;
+  overflow:visible;
 `;
 
 export const DateInputContainer = styled.div`
