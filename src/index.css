@@ -16,6 +16,10 @@ h5,
   background: none;
 }
 
+:root {
+  background: #D9E6F7;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
