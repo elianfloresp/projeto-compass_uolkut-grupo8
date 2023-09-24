@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+import React from 'react';
+import Header from './components/pages/UI/StyledHeader';
+
+import { Outlet } from 'react-router-dom';
+=======
+import React, { useState, ChangeEvent } from 'react';
+import styled from 'styled-components';
+import CustomCheckbox from './components/pages/UI/StyledCB';
+
+function App() {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+  };
+>>>>>>> feat/styled-form-component
+
+  return (
+<<<<<<< HEAD
+    <div className='App'> 
+      <Header />
+      <Outlet />
+=======
+    <div>
+      <CustomCheckbox checked={isChecked} onChange={handleChange} />
+      <p>Checkbox is {isChecked ? 'checked' : 'unchecked'}</p>
+>>>>>>> feat/styled-form-component
+    </div>
+  );
+}
+
+export default App;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> feat/styled-form-component
