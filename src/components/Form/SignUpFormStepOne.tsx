@@ -10,7 +10,7 @@ import {
 } from "../pages/UI/StyledForm";
 
 const SignUpFormStepOne: FC = () => {
-  const isMobile = useMediaQuery('(min-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <FormContainer>
       <Title>Cadastre-se no UOLkut</Title>
@@ -31,15 +31,14 @@ const SignUpFormStepOne: FC = () => {
       />
 
       <DateInputContainer>
-        {!isMobile && <DateLabel>Nascimento</DateLabel>}
         <Input
           id="sign-up-birthday"
           className="small-input"
           placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
-          type="date"
+          type="text"
         />
-
         {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+
         <Input
           id="sign-up-occupation"
           className="small-input"

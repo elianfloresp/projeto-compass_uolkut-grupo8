@@ -20,9 +20,11 @@ export const FormContainer = styled.form`
 
   overflow: auto;
 
+
   @media (min-width : 768px) {
     width: 24rem;
     height: 37.375rem; 
+    margin-left: 32px;
   }
 `;
 
@@ -77,6 +79,7 @@ export const TextArea = styled.textarea`
 
   padding: 1rem;
 
+  
   @media (min-width : 768px) {
     width: 21rem;
   }
@@ -96,7 +99,7 @@ export const Input = styled.input`
     background: #eff3f8;
 
     border-radius: 8px;
-    margin-bottom: 1.19rem;
+    margin-top: 1.19rem;
   }
 
   &::-webkit-outer-spin-button,
@@ -120,6 +123,7 @@ export const Input = styled.input`
   }
 
 
+  
   @media (min-width : 768px) {
     font-size: 1rem;
 
@@ -129,6 +133,10 @@ export const Input = styled.input`
     &[type='date'],
     &[type='password'] {
       width: 21rem;
+      height: 3.1875rem;
+    }
+    &.small-input {
+      width: 7.8125rem;
       height: 3.1875rem;
     }
   }
@@ -145,6 +153,13 @@ export const Label = styled.label`
 
 export const DateLabel = styled.label`
   color: #868686;
+  color: #ED6D25;
+  font-family: Roboto Flex;
+  font-size: 0.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
 `;
 
 export const DateInputContainer = styled.div`
@@ -163,6 +178,8 @@ export const Button = styled.button`
   border-radius: 0.5rem;
   background: #ed6d25;
 
+  margin-top: 1.19rem;
+
   color: #fff;
   font-family: "Roboto Flex";
   font-size: 0.875rem; 
@@ -176,6 +193,7 @@ export const Button = styled.button`
     background: #EFF3F8;
   }
 
+  
   @media (min-width : 768px) {
     width: 21rem;
     height: 3.1875rem; 
