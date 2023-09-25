@@ -23,6 +23,7 @@ export const FormContainer = styled.form`
   @media (min-width : 768px) {
     width: 24rem;
     height: 37.375rem; 
+    margin-left: 32px;
   }
 `;
 
@@ -96,7 +97,11 @@ export const Input = styled.input`
     background: #eff3f8;
 
     border-radius: 8px;
-    margin-bottom: 1.19rem;
+
+    margin-top: 1.19rem;
+    &:first-of-type {
+      margin-top: 0rem;
+    }
   }
 
   &::-webkit-outer-spin-button,
@@ -131,6 +136,10 @@ export const Input = styled.input`
       width: 21rem;
       height: 3.1875rem;
     }
+    &.small-input {
+      width: 7.8125rem;
+      height: 3.1875rem;
+    }
   }
 `;
 
@@ -144,16 +153,48 @@ export const Label = styled.label`
 `;
 
 export const DateLabel = styled.label`
-  color: #868686;
+  color: #ED6D25;
+  font-family: Roboto Flex;
+  font-size: 0.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  height: 0;
+  overflow:visible;
 `;
 
 export const DateInputContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const GridInputContainer = styled.div`
+  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 1.31rem 0 1.31rem;
+  padding: 0 21px 0 21px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top:1.19rem;
+
+  @media (min-width : 768px) {
+    margin-top: 0rem;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    & input.small-input:nth-child(odd) {
+      width: 7.8125rem;
+      height: 3.1875rem;
+      margin-top:1.19rem;
+    }
+    & input.small-input:nth-child(even){
+      width: 11.5rem;
+      height: 3.1875rem;
+      margin-top:1.19rem;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -162,6 +203,8 @@ export const Button = styled.button`
 
   border-radius: 0.5rem;
   background: #ed6d25;
+
+  margin-top: 1.19rem;
 
   color: #fff;
   font-family: "Roboto Flex";
