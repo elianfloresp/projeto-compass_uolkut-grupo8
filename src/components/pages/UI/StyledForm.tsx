@@ -20,7 +20,6 @@ export const FormContainer = styled.form`
 
   overflow: auto;
 
-
   @media (min-width : 768px) {
     width: 24rem;
     height: 37.375rem; 
@@ -79,7 +78,6 @@ export const TextArea = styled.textarea`
 
   padding: 1rem;
 
-  
   @media (min-width : 768px) {
     width: 21rem;
   }
@@ -127,7 +125,6 @@ export const Input = styled.input`
   }
 
 
-  
   @media (min-width : 768px) {
     font-size: 1rem;
 
@@ -156,7 +153,6 @@ export const Label = styled.label`
 `;
 
 export const DateLabel = styled.label`
-  color: #868686;
   color: #ED6D25;
   font-family: Roboto Flex;
   font-size: 0.375rem;
@@ -223,7 +219,6 @@ export const Button = styled.button`
     background: #EFF3F8;
   }
 
-  
   @media (min-width : 768px) {
     width: 21rem;
     height: 3.1875rem; 

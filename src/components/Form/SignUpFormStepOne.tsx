@@ -31,6 +31,7 @@ const SignUpFormStepOne: FC = () => {
         type="text"
       />
 
+
       <GridInputContainer>
         <DateInputContainer>
           <Input

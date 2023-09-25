@@ -10,6 +10,13 @@ const MainContent = styled.main`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  /* height: 87.037037037vh; */
+  margin-top: 17px;
+  transition: all 0.1s linear;
+  @media (min-width: 768px){
+    margin-top: 13.7962962963vh;
+  }
 `;
 
 const App = () => {
