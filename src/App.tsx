@@ -1,13 +1,15 @@
 import React from 'react';
-import StyledForm from './components/pages/UI/StyledForm'; 
+import Header from './components/pages/UI/StyledHeader';
+
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='App'>
-      
+    <div className='App'> 
+      <Header />
+      <Outlet />
     </div>
   );
 };
 
 export default App;
-

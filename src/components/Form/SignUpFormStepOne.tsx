@@ -5,12 +5,13 @@ import {
   Input,
   Title,
   DateInputContainer,
+  GridInputContainer,
   DateLabel,
   Button,
 } from "../pages/UI/StyledForm";
 
 const SignUpFormStepOne: FC = () => {
-  const isMobile = useMediaQuery('(min-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <FormContainer>
       <Title>Cadastre-se no UOLkut</Title>
@@ -30,16 +31,18 @@ const SignUpFormStepOne: FC = () => {
         type="text"
       />
 
-      <DateInputContainer>
-        {!isMobile && <DateLabel>Nascimento</DateLabel>}
-        <Input
-          id="sign-up-birthday"
-          className="small-input"
-          placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
-          type="date"
-        />
 
-        {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+      <GridInputContainer>
+        <DateInputContainer>
+          <Input
+            id="sign-up-birthday"
+            className="small-input"
+            placeholder={isMobile ? "DD/MM/AAAA" : "Nascimento"}
+            type="text"
+          />
+          {!isMobile && <DateLabel>DDD/MM/AAAA</DateLabel>}
+        </DateInputContainer>
+
         <Input
           id="sign-up-occupation"
           className="small-input"
@@ -47,23 +50,19 @@ const SignUpFormStepOne: FC = () => {
           type="text"
         />
 
-        <div>
-          <Input
-            id="sign-up-country"
-            className="small-input"
-            placeholder="País"
-            type="text"
-          />
-        </div>
-        <div>
-          <Input
-            id="sign-up-city"
-            className="small-input"
-            placeholder="Cidade"
-            type="text"
-          />
-        </div>
-      </DateInputContainer>
+        <Input
+          id="sign-up-country"
+          className="small-input"
+          placeholder="País"
+          type="text"
+        />
+        <Input
+          id="sign-up-city"
+          className="small-input"
+          placeholder="Cidade"
+          type="text"
+        />
+      </GridInputContainer>
 
       <Button type="submit">Criar conta</Button>
     </FormContainer>
