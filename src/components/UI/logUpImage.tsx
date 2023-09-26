@@ -35,7 +35,6 @@ const StyledLogUpImage = styled.img`
 
 const StyledParagraph = styled.p`
     position: absolute;
-    top: 30.62rem;
     right: 9.44rem;
     bottom: 2rem;
     left: 2rem;
@@ -45,6 +44,14 @@ const StyledParagraph = styled.p`
     font-weight: 500;
     text-align: left;
     line-height: 2.375rem;
+    transition: all 0.15s linear;
+    @media (max-width: 1380px){
+      right:  1rem;
+      bottom: 1rem;
+      left:   1rem;
+
+      text-align: center;
+    }
 `; 
 
 const LogUpImage = () => {
