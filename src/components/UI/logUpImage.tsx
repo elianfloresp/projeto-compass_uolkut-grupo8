@@ -6,6 +6,11 @@ const StyledContainer = styled.div`
     max-width: 800px;
     height: 598px;
     border-radius: 16px;
+    display: none;
+
+    @media (min-width: 768px){
+      display: block
+    }
 `;
 
 const StyledLogUpWrapper = styled.div`
