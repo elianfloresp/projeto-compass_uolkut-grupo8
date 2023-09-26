@@ -25,4 +25,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
 
+.navegation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  
+}
+
+.Editprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Img from '../../imgs/bg.png';
 import { useState } from "react";
 
+
 const StyledContainer = styled.div`
 width: 100%;
 height: 60px;
@@ -128,7 +129,7 @@ export default function NavbarProfile(){
                 </StyledList>                
             </StyledContainer1>
             <StyledContainer2>
-                {/* <StyledImg src={Img} alt="user profile" />  precisamos definir as imagens pra por a foto o perfil aqui */}
+                {/* <StyledImg src={ProfileImage} alt="user profile" />  precisamos definir as imagens pra por a fotod o perfil aqui */}
                 <StyledName>Vitor Kley</StyledName>
                 <StyledFigure onClick={toggleMobileMenu}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
