@@ -13,7 +13,7 @@ import {
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
   return (
-    <FormContainer>
+    <FormContainer className="no-padding-top">
       <Title>Cadastre-se no UOLkut</Title>
       <Input
         id="sign-up-email"
@@ -63,6 +63,8 @@ const SignUpFormStepOne: FC = () => {
           type="text"
         />
       </GridInputContainer>
+        
+      {/* TODO: ADICIONAR SELECT DE RELACIONAMENTO AQUI*/}
 
       <Button type="submit">Criar conta</Button>
     </FormContainer>
