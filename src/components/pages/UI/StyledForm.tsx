@@ -105,6 +105,7 @@ export const Input = styled.input`
     border-radius: 8px;
 
     margin-top: 1.19rem;
+
     &:first-of-type {
       margin-top: 0rem;
     }
@@ -142,6 +143,14 @@ export const Input = styled.input`
     &[type='password'] {
       width: 21rem;
       height: 3.1875rem;
+
+
+      &.margin-113 {
+        margin-bottom: 1.13rem;
+      }
+      &.margin-125 {
+        margin-bottom: 1.25rem;
+      }
     }
     &.small-input {
       width: 7.8125rem;
@@ -246,6 +255,9 @@ export const Button = styled.button`
     height: 3.1875rem; 
 
     font-size: 1.125rem;
+    &#save-button{
+      margin-top: 0;
+    }
   }
 `;
 
@@ -265,7 +277,10 @@ export const Href = styled.a`
 
   @media (min-width : 768px) {
     font-size: 1.125rem;
-    margin-top: 2rem;
+      margin-top: 6.81rem;
+    &.underline{
+      margin-top: 2rem;
+    }
   }
 `;
 
