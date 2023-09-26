@@ -7,8 +7,8 @@ import {
   DateInputContainer,
   GridInputContainer,
   DateLabel,
-  Button,
 } from "../pages/UI/StyledForm";
+import LinkButton from "../UI/LinkButton";
 
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -66,7 +66,7 @@ const SignUpFormStepOne: FC = () => {
         
       {/* TODO: ADICIONAR SELECT DE RELACIONAMENTO AQUI*/}
 
-      <Button type="submit">Criar conta</Button>
+      <LinkButton to='/'>Criar conta</LinkButton>
     </FormContainer>
   );
 };

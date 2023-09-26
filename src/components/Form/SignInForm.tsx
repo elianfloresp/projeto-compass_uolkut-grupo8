@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
-import { FormContainer, Button, Title, Input, Href } from "../pages/UI/StyledForm";
+import { FormContainer, Title, Input } from "../pages/UI/StyledForm";
 import CustomCheckbox from '../pages/UI/StyledCB';
+import LinkButton from "../UI/LinkButton";
 
 const SignInForm:FC = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -17,12 +18,12 @@ const SignInForm:FC = () => {
       
       <CustomCheckbox id='remember-my-password' checked={isChecked} onChange={handleChange} label="Lembrar minha senha" />
 
-      <Button type="submit">Entrar na conta</Button>
-      <Button type="button" className="secondary">Criar conta</Button>
+      <LinkButton to='/'>Entrar</LinkButton>
+      <LinkButton to='/sign-up/step-one' secondary>Criar conta</LinkButton>
 
-      <Href className="underline">
+      <LinkButton to='/password/recover/' simple underline>
         Esqueci minha senha
-      </Href>
+      </LinkButton>
       
     </FormContainer>
   );
