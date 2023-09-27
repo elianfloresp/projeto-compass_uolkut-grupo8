@@ -131,6 +131,11 @@ export const Input = styled.input`
     width: 7.8125rem;
   }
 
+  &.invalid,
+  &.small-input.invalid {
+    border: solid 2px red;
+  }
+
 
   transition: all .1s linear;
   @media (min-width : 768px) {

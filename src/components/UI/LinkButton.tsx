@@ -7,7 +7,7 @@ interface LinkProps {
   to: string;
   children: ReactNode;
 
-  validate?(): boolean;
+  // validate?(): boolean;
 
   type?: string;
   className?: string;
@@ -25,17 +25,11 @@ const LinkButton: FC<LinkProps> = (props) => {
 
   const navigate = useNavigate();
   const navigateHandler = (event: MouseEvent) => {
-    event.preventDefault();
-    
-    if (props.validate)
-      if (props.validate()) 
-        return;
-
     navigate(props.to);
   };
 
   return (
-    <StyledComponent id={props.id} className={classes} onClick={navigateHandler} style={props.style}>
+    <StyledComponent id={props.id} className={classes} onClick={navigateHandler} style={props.style} type={props.type}>
       {props.children}
     </StyledComponent>
   );
