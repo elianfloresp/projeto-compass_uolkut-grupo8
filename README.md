@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# UolKut
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contêm o desafio proposto na 8ª semana do programa de bolsas da COMPASS.UOL.
 
-## Available Scripts
 
-In the project directory, you can run:
+> Este projeto foi iniciado utilizando a ferramenta [Create React App](https://github.com/facebook/create-react-app) junto com o template de Typescript disponibilizado por eles.
+
+
+> O layout do projeto pode ser acessado neste [figma](https://www.figma.com/file/I0Hp1SugsgzkAxqnj38WYc/Desafio-VIII---UolKut?node-id=2001%3A10&mode=dev).
+
+---
+
+### **Instrutores**:
+
+- [cassio.takarada@compasso.com.br](mailto:cassio.takarada@compasso.com.br)
+- [higor.braga@compasso.com.br](mailto:higor.braga@compasso.com.br)
+- [jonatan.machado@compasso.com.br](mailto:jonatan.machado@compasso.com.br)
+- [l.muller.dev@gmail.com](mailto:l.muller.dev@gmail.com)
+- [rafael.colares@compasso.com.br](mailto:rafael.colares@compasso.com.br)
+
+### **Scrum Master**:
+
+- [luara.oliveira@compasso.com.br](mailto:luara.oliveira@compasso.com.br)
+
+---
+
+## Scripts disponíveis:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Inicia o projeto no endereço [http://localhost:3000](http://localhost:3000).\
+Também permite que alterações feitas no código sejam automaticamente refletidas no site.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia os testes em modo iterativo.\
+Apesar de disponível como script, não foi utilizado no projeto.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Compila o App de forma optimizado para a produção em arquivos minificados salvos na pasta `build`.
