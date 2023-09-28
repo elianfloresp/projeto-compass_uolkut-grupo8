@@ -5,7 +5,7 @@ import {
   Input,
   Title,
   GridInputContainer,
-} from "../pages/UI/StyledFormEdit";
+} from "../pages/UI/StyledFormEditProfile";
 import LinkButton from "../UI/LinkButton";
 import CustomSelectMenuEdit from "../pages/UI/StyledSelectEditProfile"
 
