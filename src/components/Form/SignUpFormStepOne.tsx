@@ -7,13 +7,14 @@ import {
   DateInputContainer,
   GridInputContainer,
   DateLabel,
-  Button,
 } from "../pages/UI/StyledForm";
+import LinkButton from "../UI/LinkButton";
+import CustomSelectMenu from "../pages/UI/StyledSelect"
 
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
   return (
-    <FormContainer>
+    <FormContainer className="no-padding-top">
       <Title>Cadastre-se no UOLkut</Title>
       <Input
         id="sign-up-email"
@@ -63,8 +64,11 @@ const SignUpFormStepOne: FC = () => {
           type="text"
         />
       </GridInputContainer>
+        
+      {/* TODO: ADICIONAR SELECT DE RELACIONAMENTO AQUI*/}
+      <CustomSelectMenu/>
 
-      <Button type="submit">Criar conta</Button>
+      <LinkButton to='/'>Criar conta</LinkButton>
     </FormContainer>
   );
 };

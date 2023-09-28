@@ -42,7 +42,7 @@ const CheckboxContainer = styled.div`
   display: flex;
   align-items: center;
   align-self: flex-start;
-  margin: 31px 0 41px 21px;
+  margin: 31px 0 45.52px 21px;
 
   
   & label {
@@ -54,6 +54,7 @@ const CheckboxContainer = styled.div`
   }
 
   @media (min-width: 768px){
+    margin: 25px 0 40px 21px;
     & label {
       font-size: 1rem;
     }
@@ -64,16 +65,17 @@ interface CustomCheckboxProps {
   id: string;
   label: string;
   checked: boolean;
+  style?: any;
   onChange: () => void;
 }
 
-const CustomCheckbox: React.FC<CustomCheckboxProps> = ({id, label, checked, onChange}) => {
+const CustomCheckbox: React.FC<CustomCheckboxProps> = ({id, label, checked, style, onChange}) => {
   const handleChange = () => {
     onChange()
   }
 
   return (
-    <CheckboxContainer>
+    <CheckboxContainer style={style}>
       <CheckboxWrapper onClick={handleChange}>
         <input id={id} type="checkbox" checked={checked}/>
         <div className="checkbox-inner"></div>

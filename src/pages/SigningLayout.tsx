@@ -20,13 +20,13 @@ const MainContent = styled.main`
 `;
 
 const App = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isNotMobile = useMediaQuery("(min-width: 768px)");
   return (
     <>
       <MainContent>
         <Outlet />
       </MainContent>
-      {!isMobile && <Footer />}
+      {isNotMobile && <Footer />}
     </>
   );
 };

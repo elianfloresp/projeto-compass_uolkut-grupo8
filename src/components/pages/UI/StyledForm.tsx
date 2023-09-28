@@ -20,7 +20,12 @@ export const FormContainer = styled.form`
 
   overflow: auto;
 
+  transition: all .1s linear;
   @media (min-width : 768px) {
+    &.no-padding-top {
+      padding: 1rem 0 2rem 0;
+    }
+    
     width: 24rem;
     height: 37.375rem; 
     margin-left: 32px;
@@ -41,6 +46,7 @@ export const StyledTitle = styled.h1`
     font-family: "Inter";
   }
 
+  transition: all .1s linear;
   @media (min-width : 768px) {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -99,6 +105,7 @@ export const Input = styled.input`
     border-radius: 8px;
 
     margin-top: 1.19rem;
+
     &:first-of-type {
       margin-top: 0rem;
     }
@@ -125,6 +132,7 @@ export const Input = styled.input`
   }
 
 
+  transition: all .1s linear;
   @media (min-width : 768px) {
     font-size: 1rem;
 
@@ -135,10 +143,29 @@ export const Input = styled.input`
     &[type='password'] {
       width: 21rem;
       height: 3.1875rem;
+
+
+      &.margin-113 {
+        margin-bottom: 1.13rem;
+      }
+      &.margin-125 {
+        margin-bottom: 1.25rem;
+      }
     }
     &.small-input {
       width: 7.8125rem;
       height: 3.1875rem;
+    }
+
+    &[type='text'],
+    &[type='password'] {
+      margin-top: 0;
+    }
+    &[type='email'] {
+      margin-bottom: 1.5rem;
+    }
+    &[type='password'] {
+      margin-bottom: 1rem;
     }
   }
 `;
@@ -150,6 +177,7 @@ export const Label = styled.label`
   @media (min-width : 768px) {
     font-size: 1rem;
   }
+
 `;
 
 export const DateLabel = styled.label`
@@ -194,6 +222,8 @@ export const GridInputContainer = styled.div`
       height: 3.1875rem;
       margin-top:1.19rem;
     }
+    
+    margin-bottom: 0.75rem;
   }
 `;
 
@@ -219,11 +249,15 @@ export const Button = styled.button`
     background: #EFF3F8;
   }
 
+  transition: all .1s linear;
   @media (min-width : 768px) {
     width: 21rem;
     height: 3.1875rem; 
 
     font-size: 1.125rem;
+    &#save-button{
+      margin-top: 0;
+    }
   }
 `;
 
@@ -239,8 +273,14 @@ export const Href = styled.a`
     text-decoration: underline;
   }
 
+  margin-top: 4.83rem;
+
   @media (min-width : 768px) {
     font-size: 1.125rem;
+      margin-top: 6.81rem;
+    &.underline{
+      margin-top: 2rem;
+    }
   }
 `;
 
