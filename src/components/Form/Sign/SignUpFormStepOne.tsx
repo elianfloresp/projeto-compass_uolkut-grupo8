@@ -1,5 +1,5 @@
 import { FC } from "react";
-import useMediaQuery from "../../hooks/use-media-query";
+import useMediaQuery from "../../../hooks/use-media-query";
 import {
   FormContainer,
   Input,
@@ -7,7 +7,7 @@ import {
   DateInputContainer,
   DateLabel,
   Button,
-} from "../pages/UI/StyledForm";
+} from "../Styled/StyledForm";
 
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(min-width: 600px)');

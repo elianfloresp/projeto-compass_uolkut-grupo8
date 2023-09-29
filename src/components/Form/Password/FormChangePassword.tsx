@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Button, FormContainer, Href, Input, Title } from "../pages/UI/StyledForm";
+import { Button, FormContainer, Href, Input, Title } from "../Styled/StyledForm";
 
-const ChangePasswordForm:FC = () => {
+const FormChangePassword:FC = () => {
   return (
     <FormContainer>
       <Title>Nova senha</Title>
@@ -18,4 +18,4 @@ const ChangePasswordForm:FC = () => {
   );
 }
 
-export default ChangePasswordForm;
+export default FormChangePassword;

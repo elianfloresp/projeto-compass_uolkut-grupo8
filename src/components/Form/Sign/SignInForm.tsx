@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FormContainer, Button, Title, Input, Label, Href } from "../pages/UI/StyledForm";
+import { FormContainer, Button, Title, Input, Label, Href } from "../Styled/StyledForm";
 
 const SignInForm:FC = () => {
   return (

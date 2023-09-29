@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SignUpFormStepTwo from "../components/Form/SignUpFormStepTwo";
+import SignUpFormStepTwo from "../components/Form/Sign/SignUpFormStepTwo";
 import LogUpImage from "../components/UI/logUpImage";
 import useMediaQuery from "../hooks/use-media-query";
 

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Button, FormContainer, Input, Title, Href } from "../pages/UI/StyledForm";
+import { Button, FormContainer, Input, Title, Href } from "../Styled/StyledForm";
 
 const RecoverPasswordForm:FC = () => {
   return (

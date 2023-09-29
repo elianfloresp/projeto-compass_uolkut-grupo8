@@ -7,7 +7,7 @@ import {
   Select,
   Button,
   TextArea,
-} from "../pages/UI/StyledForm";
+} from "../Styled/StyledForm";
 
 const SignUpFormStepTwo: FC = () => {
   return (
