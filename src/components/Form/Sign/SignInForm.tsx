@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
-import { FormContainer, Title, Input } from "../pages/UI/StyledForm";
-import CustomCheckbox from '../pages/UI/StyledCB';
-import LinkButton from "../UI/LinkButton";
-import useMediaQuery from "../../hooks/use-media-query";
+import CustomCheckbox from '../../UI/StyledCB';
+import LinkButton from "../../UI/LinkButton";
+import useMediaQuery from "../../../hooks/use-media-query";
+import { FormContainer, Title, Input } from "../Styled/StyledForm";
 
 const SignInForm:FC = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -41,12 +41,12 @@ const SignInForm:FC = () => {
         }}
       />
 
-      <LinkButton to='/' style={{margin: 0}}>
+      <LinkButton to='/home' style={{margin: 0}}>
         Entrar
       </LinkButton>
       
       <LinkButton 
-        to='/sign-up/step-one'
+        to='/sign-up'
         secondary
         style={{
           marginTop:    isMobile ? '1.55rem' : '1.5rem',
@@ -63,7 +63,6 @@ const SignInForm:FC = () => {
       >
         Esqueci minha senha
       </LinkButton>
-      
     </FormContainer>
   );
 }

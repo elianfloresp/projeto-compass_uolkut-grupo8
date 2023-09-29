@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignInPage from './pages/SignIn';
 import SignUpStepOnePage from './pages/SignUpStepOne';
-import SignUpStepTwoPage from './pages/SignUpStepTwo';
 import RecoverPasswordPage from './pages/RecoverPassword';
 import ChangePasswordPage from './pages/ChangePassword';
 import SigningLayout from './pages/SigningLayout';
+import ProfilePage from './pages/ProfileScreen';
 
 
 const router = createBrowserRouter([
@@ -22,12 +22,12 @@ const router = createBrowserRouter([
         element:<SigningLayout/>,
         children: [
           {index: true, element:<SignInPage/>},
-          {path: 'sign-up/step-one', element:<SignUpStepOnePage/>},
-          {path: 'sign-up/step-two', element:<SignUpStepTwoPage/>},
+          {path: 'sign-up', element:<SignUpStepOnePage/>},
           {path: 'password/recover', element:<RecoverPasswordPage/>},
           {path: 'password/change', element:<ChangePasswordPage/>},
         ]
       },
+      {path: 'home', element:<ProfilePage />},
     ]
   },
 ])

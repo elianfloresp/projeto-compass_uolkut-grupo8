@@ -1,5 +1,5 @@
 import { FC } from "react";
-import useMediaQuery from "../../hooks/use-media-query";
+import useMediaQuery from "../../../hooks/use-media-query";
 import {
   FormContainer,
   Input,
@@ -7,9 +7,9 @@ import {
   DateInputContainer,
   GridInputContainer,
   DateLabel,
-} from "../pages/UI/StyledForm";
-import LinkButton from "../UI/LinkButton";
-import CustomSelectMenu from "../pages/UI/StyledSelect"
+} from "../Styled/StyledForm";
+import LinkButton from "../../UI/LinkButton";
+import CustomSelectMenu from "../../UI/StyledSelect"
 
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -65,7 +65,6 @@ const SignUpFormStepOne: FC = () => {
         />
       </GridInputContainer>
         
-      {/* TODO: ADICIONAR SELECT DE RELACIONAMENTO AQUI*/}
       <CustomSelectMenu/>
 
       <LinkButton to='/'>Criar conta</LinkButton>

@@ -5,9 +5,9 @@ import {
   Input,
   Title,
   GridInputContainer,
-} from "../pages/UI/StyledFormEditProfile";
+} from "../UI/StyledFormEditProfile";
 import LinkButton from "../UI/LinkButton";
-import CustomSelectMenuEdit from "../pages/UI/StyledSelectEditProfile"
+import CustomSelectMenuEdit from "../UI/StyledSelectEditProfile"
 
 const EditProfileForm: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
