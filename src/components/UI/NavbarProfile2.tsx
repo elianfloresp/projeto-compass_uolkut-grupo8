@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Img from '../../images/bg.png';
+import Img from '../../assets/profile.svg';
 import { useState } from "react";
 import CaretDown from "../../images/CaretDown.svg";
 const StyledContainer = styled.div`
@@ -186,7 +186,7 @@ export default function NavbarProfile2(){
                 </SearchContainer>
                 
                 <StyledImg src={Img} alt="user profile" />
-                <StyledName>Gabriel Barbosa</StyledName>
+                <StyledName>Vitor Kley</StyledName>
                 <StyledFigure src={CaretDown} onClick={toggleMobileMenu}/>
                 {isMobileMenuVisible && (
                 <StyledListMobile>

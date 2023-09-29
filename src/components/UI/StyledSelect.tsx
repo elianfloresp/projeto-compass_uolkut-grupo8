@@ -49,6 +49,7 @@ export const Options = styled.ul`
   border-radius: 0rem 0rem 0.375rem 0.375rem;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 `;
 
 export const Option = styled.li`

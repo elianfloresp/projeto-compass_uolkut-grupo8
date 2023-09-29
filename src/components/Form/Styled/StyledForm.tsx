@@ -19,7 +19,7 @@ export const FormContainer = styled.form`
   border-radius: 16px;
   box-shadow: 0px 4px 4px #00000040;
 
-  overflow: hidden;
+  overflow: auto;
 
   transition: all .1s linear;
   @media (min-width : 768px) {
@@ -55,7 +55,7 @@ export const StyledTitle = styled.h1`
   }
 `;
 
-export const Title:FC<{children: ReactNode, style:any}> = (props) => {
+export const Title:FC<{children: ReactNode, style?:any}> = (props) => {
   return (
     <>
       <img src={UOLKutLogo} alt="UOLKut Logo" />

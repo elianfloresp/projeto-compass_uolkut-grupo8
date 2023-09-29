@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Imgbg from '../../images/bg.png';
+import Imgbg from '../../assets/profile.svg';
 import React, { ReactNode } from 'react';
 
 interface CardProps {

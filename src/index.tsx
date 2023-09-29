@@ -10,6 +10,7 @@ import RecoverPasswordPage from './pages/RecoverPassword';
 import ChangePasswordPage from './pages/ChangePassword';
 import SigningLayout from './pages/SigningLayout';
 import ProfilePage from './pages/ProfileScreen';
+import Editprofile from './pages/EditProfile';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
       },
     ]
   },
-  {path: 'home', element:<ProfilePage />},
+  {path: '/home', element:<ProfilePage />},
+  {path: '/EditProfile', element:<Editprofile/>},
 ])
 
 

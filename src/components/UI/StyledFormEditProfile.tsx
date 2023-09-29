@@ -1,6 +1,6 @@
 import { FC, ReactNode } from "react";
 import styled from "styled-components";
-import UOLKutLogo from '../../../assets/ps_orkut.svg';
+import UOLKutLogo from '../../assets/ps_orkut.svg';
 
 
 export const FormContainer = styled.form`

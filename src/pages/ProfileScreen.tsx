@@ -397,7 +397,7 @@ export default function Profile(){
             </SearchContainer>
               <Styledd>
                 <Containerprofile2>
-                  <StyledText1>Gabriel Barbosa</StyledText1>
+                  <StyledText1>Vitor Kley</StyledText1>
                   <StyledText2>Solteiro, Brasil</StyledText2>                    
                 </Containerprofile2>
                 <StyledButton onClick={handleButton}>Editar perfil</StyledButton>
@@ -420,7 +420,7 @@ export default function Profile(){
               <div>
                 <Container>
                 <StyledBox>
-                  <StyledWelcome>Boa tarde, Gabriel Barbosa</StyledWelcome>
+                  <StyledWelcome>Boa tarde, Vitor Kley</StyledWelcome>
                   <StyledFrase>Programar sem café é igual poeta sem poesia. <StyledTriangle /></StyledFrase>
                   <StyledEstatisticas>
                     <div>

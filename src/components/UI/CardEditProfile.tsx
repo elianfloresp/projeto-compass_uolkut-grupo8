@@ -1,4 +1,3 @@
-import { count } from "console";
 import { styled } from "styled-components";
 import ProfileImage from "../Profile/ProfileImage";
 import ProfileSVG from "../../assets/profile.svg";

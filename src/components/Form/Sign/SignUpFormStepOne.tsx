@@ -9,7 +9,7 @@ import {
   DateLabel,
 } from "../Styled/StyledForm";
 import LinkButton from "../../UI/LinkButton";
-import CustomSelectMenu from "../../UI/StyledSelect"
+import CustomSelectMenu from "../../UI/StyledSelect";
 
 const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -68,7 +68,7 @@ const SignUpFormStepOne: FC = () => {
         
       <CustomSelectMenu style={{marginTop: '0', marginBottom: '2.31rem'}}/>
 
-      <LinkButton style={{marginTop: '0'}} to='/'>Criar conta</LinkButton>
+      <LinkButton style={{marginTop: '0', marginBottom: '0'}} to='/'>Criar conta</LinkButton>
     </FormContainer>
   );
 };
