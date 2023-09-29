@@ -121,29 +121,13 @@ export default function NavbarProfile(){
         <StyledContainer>
             <StyledContainer1>
                 <StyledText href="/">UOLkut</StyledText>
-                <StyledList>
-                    <StyledItem>Inicio</StyledItem>
-                    <StyledItem>Perfil</StyledItem>
-                    <StyledItem>Comunidades</StyledItem>
-                    <StyledItem>Jogos</StyledItem>
-                </StyledList>                
+                          
             </StyledContainer1>
             <StyledContainer2>
                 {/* <StyledImg src={ProfileImage} alt="user profile" />  precisamos definir as imagens pra por a fotod o perfil aqui */}
-                <StyledName>Vitor Kley</StyledName>
-                <StyledFigure onClick={toggleMobileMenu}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <path d="M19.5 9.96118L12 17.4542L4.5 9.96118" stroke="#ED6D25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </StyledFigure>
-                {isMobileMenuVisible && (
-                <StyledListMobile>
-                    <StyledItem>Inicio</StyledItem>
-                    <StyledItem>Perfil</StyledItem>
-                    <StyledItem>Comunidades</StyledItem>
-                    <StyledItem>Jogos</StyledItem>
-                </StyledListMobile>
-            )}
+                <StyledName>Centro de segurança</StyledName>
+                
+        
             </StyledContainer2>
         </StyledContainer>
     )
