@@ -1,16 +1,16 @@
 # UolKut
 
-Este repositório contêm o desafio proposto na 8ª semana do programa de bolsas da COMPASS.UOL.
+This repository contains the challenge proposed in the 8th week of the COMPASS.UOL scholarship program.
 
 
-> Este projeto foi iniciado utilizando a ferramenta [Create React App](https://github.com/facebook/create-react-app) junto com o template de Typescript disponibilizado por eles.
+> This project was initiated using the Create React App tool along with the TypeScript template provided by them.
 
 
-> O layout do projeto pode ser acessado neste [figma](https://www.figma.com/file/I0Hp1SugsgzkAxqnj38WYc/Desafio-VIII---UolKut?node-id=2001%3A10&mode=dev).
+>The project layout can be accessed on this Figma link. [figma](https://www.figma.com/file/I0Hp1SugsgzkAxqnj38WYc/Desafio-VIII---UolKut?node-id=2001%3A10&mode=dev).
 
 ---
 
-### **Instrutores**:
+### **Instructors**:
 
 - [cassio.takarada@compasso.com.br](mailto:cassio.takarada@compasso.com.br)
 - [higor.braga@compasso.com.br](mailto:higor.braga@compasso.com.br)
@@ -24,18 +24,18 @@ Este repositório contêm o desafio proposto na 8ª semana do programa de bolsas
 
 ---
 
-## Scripts disponíveis:
+## Available Scripts:
 
 ### `npm start`
 
-Inicia o projeto no endereço [http://localhost:3000](http://localhost:3000).\
-Também permite que alterações feitas no código sejam automaticamente refletidas no site.
+Start the project at the address[http://localhost:3000](http://localhost:3000).
+It also allows changes made to the code to be automatically reflected on the website.
 
 ### `npm test`
 
-Inicia os testes em modo iterativo.\
-Apesar de disponível como script, não foi utilizado no projeto.
+Starts tests in interactive mode..\
+Although available as a script, it was not used in the project.
 
 ### `npm run build`
 
-Compila o App de forma optimizado para a produção em arquivos minificados salvos na pasta `build`.
+Compiles the app in an optimized way for production, creating minified files saved in the build folder.
