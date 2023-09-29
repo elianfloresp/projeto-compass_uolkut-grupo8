@@ -7,7 +7,7 @@ import FriendComunity from "../components/Profile/FrienComunity";
 import InforUser from "../components/Profile/InforUser";
 import Img from "../components/Profile/Img";
 import NavbarProfile2 from "../components/UI/NavbarProfile2";
-import Footer from "../components/UI/Footer";
+
 
 
 
@@ -575,7 +575,7 @@ export default function Profile(){
                 </FriendComunity>
               </ComunityContainer>
             </StyledBoxContainer>
-          <Footer/>
+
         </StyledContainer>
     )
 }
