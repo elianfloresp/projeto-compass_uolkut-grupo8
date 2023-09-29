@@ -15,10 +15,11 @@ const SignUpFormStepOne: FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <FormContainer className="no-padding-top">
-      <Title>Cadastre-se no UOLkut</Title>
+      <Title style={{paddingBottom: '0'}}>Cadastre-se no UOLkut</Title>
       <Input
         id="sign-up-email"
         placeholder="E-mail"
+        style={{marginTop: '1.25rem', marginBottom: '1rem'}}
         type="email"
       />
       <Input
@@ -33,7 +34,7 @@ const SignUpFormStepOne: FC = () => {
       />
 
 
-      <GridInputContainer>
+      <GridInputContainer style={{marginBottom: '1rem'}}>
         <DateInputContainer>
           <Input
             id="sign-up-birthday"
@@ -65,9 +66,9 @@ const SignUpFormStepOne: FC = () => {
         />
       </GridInputContainer>
         
-      <CustomSelectMenu/>
+      <CustomSelectMenu style={{marginTop: '0', marginBottom: '2.31rem'}}/>
 
-      <LinkButton to='/'>Criar conta</LinkButton>
+      <LinkButton style={{marginTop: '0'}} to='/'>Criar conta</LinkButton>
     </FormContainer>
   );
 };

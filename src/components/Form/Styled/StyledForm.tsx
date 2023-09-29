@@ -12,13 +12,14 @@ export const FormContainer = styled.form`
 
   box-sizing: border-box;
 
+
   padding: 3rem 0 2rem 0;
 
   background-color: #fcfdff;
   border-radius: 16px;
   box-shadow: 0px 4px 4px #00000040;
 
-  overflow: auto;
+  overflow: hidden;
 
   transition: all .1s linear;
   @media (min-width : 768px) {
@@ -26,8 +27,8 @@ export const FormContainer = styled.form`
       padding: 1rem 0 2rem 0;
     }
     
-    width: 24rem;
-    height: 37.375rem; 
+    width: 384px;
+    height: 598px; 
     margin-left: 32px;
   }
 `;
@@ -54,11 +55,11 @@ export const StyledTitle = styled.h1`
   }
 `;
 
-export const Title:FC<{children: ReactNode}> = (props: {children: ReactNode}) => {
+export const Title:FC<{children: ReactNode, style:any}> = (props) => {
   return (
     <>
       <img src={UOLKutLogo} alt="UOLKut Logo" />
-      <StyledTitle>
+      <StyledTitle style={props.style}>
         {props.children}
       </StyledTitle>
     </>
@@ -202,23 +203,24 @@ export const GridInputContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 21px 0 21px;
+  padding: 0 1.5rem 0 1.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top:1.19rem;
 
-  @media (min-width : 768px) {
-    margin-top: 0rem;
-    padding-left: 24px;
-    padding-right: 24px;
-
-    & input.small-input:nth-child(odd) {
-      width: 7.8125rem;
+    & input.small-input {
+      width: 8rem;
       height: 3.1875rem;
       margin-top:1.19rem;
     }
-    & input.small-input:nth-child(even){
-      width: 11.5rem;
+
+  @media (min-width : 768px) {
+    margin-top: 1.19rem;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    & input.small-input {
+      width: 10rem;
       height: 3.1875rem;
       margin-top:1.19rem;
     }

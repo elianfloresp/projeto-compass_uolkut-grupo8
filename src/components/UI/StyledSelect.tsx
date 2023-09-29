@@ -74,7 +74,7 @@ export const Option = styled.li`
     }
 `;
 
-const CustomSelectMenu: FC = () => {
+const CustomSelectMenu: FC<{style:any}> = (props) => {
     const [selectedValue, setSelectedValue] = useState("");
     const [menuActive, setMenuActive] = useState(false);
 
@@ -87,7 +87,7 @@ const CustomSelectMenu: FC = () => {
     ];
 
     return (
-        <SelectMenu>
+        <SelectMenu style={props.style}>
             <SelectBtn onClick={() => setMenuActive(!menuActive)}>
                 <span>{selectedValue || "Relacionamento"}</span>
                 <img src="/arrow.svg" alt=""  />
