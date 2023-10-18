@@ -1,6 +1,10 @@
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+interface ContainerProps {
+  children: ReactNode;
+}
+const StyledContainer = styled.div`
   width: 592px;
   height: 854px;
 
@@ -18,4 +22,10 @@ const Container = styled.div`
     height: 947px;
   }
 `
-export default Container;
+export default function Container({ children }: ContainerProps) {
+  return (
+    <StyledContainer>
+      {children}
+    </StyledContainer>
+  );
+}
